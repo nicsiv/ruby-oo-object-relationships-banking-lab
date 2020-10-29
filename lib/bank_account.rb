@@ -1,3 +1,5 @@
+
+
 class BankAccount
     attr_reader :name
     attr_accessor :balance, :status
@@ -8,7 +10,7 @@ class BankAccount
     end
 
     def deposit(amt)
-        self.balance += amt
+        @balance += amt
     end
 
     def display_balance
@@ -23,3 +25,7 @@ class BankAccount
         self.status = "closed"
     end
 end
+
+muhidin = BankAccount.new("Muhidin")
+nicole = BankAccount.new("Nicole")
+
